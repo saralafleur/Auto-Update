@@ -1,0 +1,24 @@
+Node.Host
+	- Windows Service Framework
+	- Plugin Framework
+	- Update Framework
+	- Logging Framework
+Node.Plugin
+	- Common Entry Point
+	- Common Basic Data Structor for the Plugin
+		- Version, etc.
+	- Common logging
+	- Logging Framework
+		- Ability to have it's own isolated Log
+
+What if you want to update Node.Host?
+	- can we?
+
+Based on the design, the Node.Host never updates, only the Plugins
+- I think we need to update the Host
+
+So the concept is here is that a Host can contain multiple plugins
+The plugins can then be added and updated at will
+Which allows for expansion and rapid response to needs
+Ability to facilute a large network of Nodes
+All withing the concept of remote ability
